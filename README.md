@@ -1,12 +1,49 @@
-# React + Vite
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <h3 align="center">Portfolio Project</h3>
+</div>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li></li><a href="#about-the-project">About The Project</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</details>
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+<!-- ABOUT THE PROJECT -->
+## About The Project
+
+This is a portfolio website project I made using resources from JSM and Sketchfab.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Built With
+
+* React.js
+* Three.js
+* React Three Fiber
+* React Three Drei
+* Email JS
+* Vite
+* Tailwind CSS
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTACT -->
+## Contact
+
+Ian Kan - ianwkan@gmail.com.com
+
+Project Link: [https://github.com/iankan04/portfolio](https://github.com/iankan04/portfolio)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
