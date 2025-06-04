@@ -5,11 +5,10 @@ import Sky from '../models/Sky';
 import HomeInfo from '../components/HomeInfo';
 
 import Building from '../models/Building';
-import street from '../assets/street.mp3';
 import { soundoff, soundon } from '../assets/icons';
 
 const Home = () => {
-  const audioRef = useRef(new Audio(street));
+  const audioRef = useRef(new Audio('/assets/street.mp3'));
   audioRef.current.volume = 0.4;
   audioRef.current.loop = true;
   const [isRotating, setIsRotating] = useState(false);

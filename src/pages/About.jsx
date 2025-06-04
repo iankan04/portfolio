@@ -22,7 +22,7 @@ const About = () => {
               about creating user-centric applications with broad communal impact!
             </p>
           <div className='flex gap-8 justify-center'>
-            <a href="../src/assets/resume.pdf" target='_blank' rel='noopener noreferrer' className='resume-btn hover:resume-btn'>
+            <a href="/assets/resume.pdf" target='_blank' rel='noopener noreferrer' className='resume-btn hover:resume-btn'>
               Resume
             </a>
             <Link to="/contact" className='about-btn'>Contact</Link>

@@ -12,12 +12,11 @@ import { useFrame, useThree } from '@react-three/fiber';
 import { a } from '@react-spring/three'; 
 import { Html } from '@react-three/drei';
 
-import building from '../assets/3d/Building_high.glb';
 import * as THREE from 'three';
 
 export default function Building({ isRotating, setIsRotating, setCurrentStage, ...props}) {
   const buildingRef = useRef()
-  const { nodes, materials, animations } = useGLTF(building)
+  const { nodes, materials, animations } = useGLTF('/assets/3d/Building_high.glb')
   const { actions } = useAnimations(animations, buildingRef)
   const { gl } = useThree();
   const lastX = useRef(0);
