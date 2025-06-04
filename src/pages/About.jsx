@@ -1,7 +1,13 @@
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { skills, experiences } from '../constants';
-import { CTA } from '../components';
+import {
+    linkedin,
+    github,
+} from "../assets/icons";
+import {
+  headshot,
+} from "../assets/images"
 import { Link } from 'react-router-dom'
 
 const About = () => {
@@ -22,17 +28,17 @@ const About = () => {
               about creating user-centric applications with broad communal impact!
             </p>
           <div className='flex gap-8 justify-center'>
-            <a href="/assets/resume.pdf" target='_blank' rel='noopener noreferrer' className='resume-btn hover:resume-btn'>
+            <a href={headshot} target='_blank' rel='noopener noreferrer' className='resume-btn hover:resume-btn'>
               Resume
             </a>
             <Link to="/contact" className='about-btn'>Contact</Link>
           </div>
           <div className='flex gap-6 justify-center'>
             <a href="https://www.linkedin.com/in/ian-kan-9901b5230/" target='_blank'>
-              <img src="../src/assets/icons/linkedin.png" alt="linkedin" className=' sm:w-auto'/>
+              <img src={linkedin} alt="linkedin" className=' sm:w-auto'/>
             </a>
             <a href="https://github.com/iankan04" target="_blank">
-              <img src="../src/assets/icons/github.svg" alt="github" className='w-full sm:w-auto'/>
+              <img src={github} alt="github" className='w-full sm:w-auto'/>
             </a>
           </div>
         </div>
