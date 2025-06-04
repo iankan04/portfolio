@@ -124,12 +124,13 @@ export const socialLinks = [
 
 export const projects = [
     {
-        iconUrl: cv,
-        theme: 'btn-back-red',
-        name: 'CV Builder',
-        description: 'Designed and implemented a resume builder website that dynamically generates CVs based on user-provided data.',
-        link: 'https://github.com/adrianhajdin/pricewise',
+        iconUrl: keyboard,
+        theme: 'btn-back-green',
+        name: 'OCamlType',
+        description: 'Collaborated in a cross-functional team to create a typing test simulator featuring multiple game modes and dynamic text generation',
+        link: 'https://github.coecis.cornell.edu/oz35/cs3110-final-project',
     },
+    
     {
         iconUrl: selenium,
         theme: 'btn-back-pink',
@@ -138,17 +139,15 @@ export const projects = [
         link: 'https://github.com/iankan04/Webscraping-Bot-for-Sports-Betting-Optimization',
     },
     {
-        iconUrl: keyboard,
-        theme: 'btn-back-green',
-        name: 'OCamlType',
-        description: 'Collaborated in a cross-functional team to create a typing test simulator featuring multiple game modes and dynamic text generation',
-        link: 'https://github.com/adrianhajdin/threads',
+        iconUrl: cv,
+        theme: 'btn-back-red',
+        name: 'CV Builder',
+        description: 'Designed and implemented a resume builder website that dynamically generates CVs based on user-provided data.',
     },
     {
         iconUrl: map,
         theme: 'btn-back-blue',
         name: 'Maze-Traversing Algorithm',
         description: "Implemented Dijkstra's algorithm and recursive DFS in Java to find the fastest route through a weighted digraph",
-        link: 'https://github.com/adrianhajdin/project_next13_car_showcase',
     },
 ];
