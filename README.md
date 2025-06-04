@@ -20,7 +20,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This is a portfolio website project I made using resources from JSM and Sketchfab.
+This is a portfolio website project I made using resources from JSM and Sketchfab. Visit portfolio-iankan04s-projects.vercel.app to see the website!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
