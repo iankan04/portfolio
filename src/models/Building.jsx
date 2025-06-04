@@ -16,7 +16,14 @@ import * as THREE from 'three';
 
 export default function Building({ isRotating, setIsRotating, setCurrentStage, ...props}) {
   const buildingRef = useRef()
-  const { nodes, materials, animations } = useGLTF('/assets/3d/Building_low.glb')
+  const [modelPath, setModelPath] = useState('/assets/3d/Building_high.glb');
+  useEffect(() => {
+    const isMobile = window.matchMedia('(max-width: 640px)').matches;
+    if (isMobile) {
+      setModelPath('/assets/3d/Building_low.glb');
+    }
+  }, []);
+  const { nodes, materials, animations } = useGLTF(modelPath);
   const { actions } = useAnimations(animations, buildingRef)
   const { gl } = useThree();
   const lastX = useRef(0);
@@ -27,6 +34,7 @@ export default function Building({ isRotating, setIsRotating, setCurrentStage, .
   const { viewport } = useThree();
   const action = actions['Take 001'];
 
+  
 
   const [isActionReady, setIsActionReady] = useState(false);
   const [isAnimationRunning, setIsAnimationRunning] = useState(false);
