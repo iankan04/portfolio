@@ -13,7 +13,7 @@ import { Link } from 'react-router-dom'
 const About = () => {
   return (
     <section className="max-container">
-      <div className='flex justify-center items-center gap-10 mb-10'>
+      <div className='flex flex-col sm:flex-row justify-center items-center gap-10 mb-10'>
         <img 
           src={headshot}
           alt="headshot" 
