@@ -16,7 +16,7 @@ import * as THREE from 'three';
 
 export default function Building({ isRotating, setIsRotating, setCurrentStage, ...props}) {
   const buildingRef = useRef()
-  const { nodes, materials, animations } = useGLTF('/assets/3d/Building_high.glb')
+  const { nodes, materials, animations } = useGLTF('/assets/3d/Building_low.glb')
   const { actions } = useAnimations(animations, buildingRef)
   const { gl } = useThree();
   const lastX = useRef(0);
@@ -44,9 +44,14 @@ export default function Building({ isRotating, setIsRotating, setCurrentStage, .
     e.preventDefault();
     setIsRotating(true);
 
-    const clientX = e.touches 
-      ? e.touches[0].clientX 
-      : e.clientX;
+    let clientX = 0;
+    if (e.touches && e.touches.length > 0) {
+      clientX = e.touches[0].clientX;
+    } else if (e.clientX !== undefined) {
+      clientX = e.clientX;
+    } else {
+      return;
+    }
 
     lastX.current = clientX
   }
@@ -63,9 +68,14 @@ export default function Building({ isRotating, setIsRotating, setCurrentStage, .
     e.preventDefault();
 
     if (isRotating) {
-      const clientX = e.touches 
-        ? e.touches[0].clientX 
-        : e.clientX;
+      let clientX = 0;
+      if (e.touches && e.touches.length > 0) {
+        clientX = e.touches[0].clientX;
+      } else if (e.clientX !== undefined) {
+        clientX = e.clientX;
+      } else {
+        return;
+      }
 
       const delta = (clientX - lastX.current) / viewport.width;
 
