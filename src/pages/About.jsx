@@ -15,7 +15,7 @@ const About = () => {
     <section className="max-container">
       <div className='flex justify-center items-center gap-10 mb-10'>
         <img 
-          src="../src/assets/images/headshot.jpeg" 
+          src={headshot}
           alt="headshot" 
           className='rounded-full w-75'
         />
@@ -28,7 +28,7 @@ const About = () => {
               about creating user-centric applications with broad communal impact!
             </p>
           <div className='flex gap-8 justify-center'>
-            <a href={headshot} target='_blank' rel='noopener noreferrer' className='resume-btn hover:resume-btn'>
+            <a href="/assets/resume.pdf" target='_blank' rel='noopener noreferrer' className='resume-btn hover:resume-btn'>
               Resume
             </a>
             <Link to="/contact" className='about-btn'>Contact</Link>
