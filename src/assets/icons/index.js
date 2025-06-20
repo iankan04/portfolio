@@ -28,6 +28,8 @@ import mysql from './mysql.svg'
 import map from './map.svg'
 import keyboard from './keyboard.svg'
 import cv from './cv.svg'
+import spotify from './spotify.svg'
+import recognition from './recognition.svg'
 
 export {
     css,
@@ -60,4 +62,6 @@ export {
     map,
     keyboard,
     cv,
+    spotify,
+    recognition,
 }

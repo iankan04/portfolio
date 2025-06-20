@@ -19,6 +19,8 @@ import {
     c,
     mysql,
     cv,
+    spotify,
+    recognition,
 } from "../assets/icons";
 
 export const skills = [
@@ -123,6 +125,20 @@ export const socialLinks = [
 ];
 
 export const projects = [
+    {
+        iconUrl: spotify,
+        theme: 'btn-back-yellow',
+        name: 'MCP Spotify Personal AI Assistant',
+        description: 'A Model Context Protocol (MCP) server that enables Claude to control Spotify features. Allows for read and write capabilities',
+        link: 'https://github.com/iankan04/MCP-Spotify',
+    },
+    {
+        iconUrl: recognition,
+        theme: 'btn-back-black',
+        name: 'AWS Facial Recognition',
+        description: 'A facial recognition interface using Amazon Rekognition to allow employees to sign in. AWS S3, Lambda, API Gateway, and DynamoDB are used to integrate the system.',
+        link: 'https://github.com/iankan04/aws-facial-recognition',
+    },
     {
         iconUrl: keyboard,
         theme: 'btn-back-green',
