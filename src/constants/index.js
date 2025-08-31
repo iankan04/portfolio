@@ -1,4 +1,4 @@
-import { cornell } from "../assets/images";
+import { cornell, integral } from "../assets/images";
 import {
     map,
     contact,
@@ -14,13 +14,15 @@ import {
     selenium,
     tailwindcss,
     keyboard,
-    typescript,
     ocaml,
     c,
     mysql,
     cv,
     spotify,
     recognition,
+    nodejs,
+    express,
+
 } from "../assets/icons";
 
 export const skills = [
@@ -60,9 +62,14 @@ export const skills = [
         type: "Frontend",
     },
     {
-        imageUrl: typescript,
-        name: "TypeScript",
-        type: "Frontend",
+        imageUrl: nodejs,
+        name: "Node.js",
+        type: "Backend",
+    },
+    {
+        imageUrl: express,
+        name: "Express.js",
+        type: "Backend",
     },
     {
         imageUrl: python,
@@ -92,6 +99,18 @@ export const skills = [
 ];
 
 export const experiences = [
+    {
+        title: "Full Stack SWE Intern",
+        company_name: "Derivative LLC",
+        icon: integral,
+        iconBg: "#68c3f7",
+        date: "June 2025 – August 2025",
+        points: [
+            "Spearheaded full-website redesign through implementation of React components, translating Figma designs into reusable, production-ready UI elements that standardized the design system across the platform",
+            "Engineered add-apps/websites MVP flow with React, including debounced iTunes API search, URL validation, and backend Cheerio scraping for metadata retrieval",
+            "Implemented secure JWT authentication and distributed caching service, optimizing session management to expedite backend calls, minimize latency under high traffic, and improve horizontal scalability",
+        ],
+    },
     {
         title: "Research Intern",
         company_name: "SC Johnson College of Business Emerging Markets Institute",
